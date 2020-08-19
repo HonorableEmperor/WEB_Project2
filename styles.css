@@ -7,10 +7,13 @@
 	margin: 0px;
 	font-family: 'Song Myung', serif;
 	box-sizing: border-box;
+	color: white;
 }
 
 body {
-	background-color: #EDE5E2;
+	padding-top: 50px;
+	background-color: #515151;
+	height: 3000px;
 }
 
 li {
@@ -21,16 +24,18 @@ p {
 	line-height: 1.6em;
 }
 
-a {
-	color: black;
-}
+
 
 nav ul {
 	height: 50px;
-	background-color: #EDDE45;
+	width: 100vw;
+	background-color: #C6B1A4;
+	position: fixed;
+	top: 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 1;
 }
 
 nav ul li {
@@ -52,9 +57,9 @@ h1 {
 
 #face p {
 	position: absolute;
-	left: 25vw; /* 수정 바람 */
 	top: 50%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 20px;
 }
@@ -65,33 +70,27 @@ h1 {
 	opacity: 0.5;
 }
 
-.section {
-	display: flex;
-	border-bottom: 2px solid #ED146F;
-	background-color: #9BF0E9;
-}
-
-#humanity {
-	border-top: 2px solid #ED146F;
-}
-
 .section > * {
-	margin: 10px;
-	height: 200px;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .section-head {
-	text-align: center;
-	color: #9BF0E9;
+	color: black;
 	font-size: 25px;
-	background-color: #ED146F;
-	width: 30vw;
-	padding-top: 60px;
-	padding-bottom: 60px;
+}
+
+#humanity {
+	background-color: black;
+}
+
+.section-head a {
+	font-size: 16px;
 }
 
 .section-body {
-	color: #ED146F;
+	color: black;
 }
 
 .section-body ul {
